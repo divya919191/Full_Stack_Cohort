@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+        alert('hello welcome to internal JS above closing of a head tag')
+
+    </script>
+</head>
+<body>
+
+    <h1 style="">Welcome To Modern JS Module</h1>
+    <hr>
+
+    <pre>
+
+        1. Inline JS – same line with html elements
+        2- Internal JS – same file – with <script></script>
+                    Option 1– Above closing of a head tag
+                    Recommended Option 2 – Above closing of a body tag
+
+        3– External JS– separate file – with .js extension and import using
+            <script src="path"></script>
+
+    </pre>
+
+
+    <!-- Inline JS -->
+
+    <!-- onclick– action or event user performs -->
+    <!-- alert– built in function – show pop up box -->
+    <button onclick="alert('hello welcome To Modern JS')">Click Here</button>
+    <h1 onclick="alert('hello dear.....')">Click Here</h1>
+
+
+    <!-- Internal JS -->
+
+    <!-- Recommended way
+
+    when browser loads the site first it will render UI Part then Logical Part
+
+    -->
+
+    <script>
+
+        alert("Hello welcome to Internal JS above closing of a body tag")
+
+    </script>
+
+
+    <!-- External JS – separate file -->
+    <script src="./day2.js"></script>
+</body>
+</html>
