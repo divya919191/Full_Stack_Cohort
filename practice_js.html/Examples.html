@@ -13,10 +13,10 @@
         //  document.write(name);
 
 
-         let name="Divya";
-         consolg.log(name);
-         let Person_2name="Pooja";
-         console.log(Person_2name);
+        //  let name="Divya";
+        //  consolg.log(name);
+        //  let Person_2name="Pooja";
+        //  console.log(Person_2name);
 
          
         // let empRole="AI Engineer";
@@ -25,33 +25,60 @@
         // let empRole2='Devops Engineer';
         // console.log(empRole2)
 
-let a = 2;
+// let a = 2;
 
-do {
-    console.log("I = " + a);
-    console.log("************");
+// do {
+//     console.log("I = " + a);
+//     console.log("************");
 
-    let j = 1;
-    let sum = 0;
-    let factorial = 1;
+//     let j = 1;
+//     let sum = 0;
+//     let factorial = 1;
 
-    do {
-        console.log("j = " + a * j);
+//     do {
+//         console.log("j = " + a * j);
 
-        sum = sum + (a * j);
-        factorial = factorial * j;
+//         sum = sum + (a * j);
+//         factorial = factorial * j;
 
-        j++;
-    } while (j <= 10);
+//         j++;
+//     } while (j <= 10);
 
-    console.log("Sum = " + sum);
-    console.log("Factorial = " + factorial);
-    console.log("----------------");
+//     console.log("Sum = " + sum);
+//     console.log("Factorial = " + factorial);
+//     console.log("----------------");
 
-    a++;
-} while (a <= 15);
+//     a++;
+// } while (a <= 15);
         
         
+
+
+let num1 = Number(prompt("Enter first number:"));
+let num2 = Number(prompt("Enter second number:"));
+let operator = prompt("Enter operator (+, -, *, /):");
+
+switch (operator) {
+    case "+":
+        console.log("Addition =", num1 + num2);
+        break;
+
+    case "-":
+        console.log("Subtraction =", num1 - num2);
+        break;
+
+    case "*":
+        console.log("Multiplication =", num1 * num2);
+        break;
+
+    case "/":
+        console.log("Division =", num1 / num2);
+        break;
+
+    default:
+        console.log("Invalid operator");
+}
+
 
 
 
