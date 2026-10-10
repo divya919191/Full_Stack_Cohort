@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meter to Kilometer</title>
+</head>
+<body>
+
+    <h2>Meter to Kilometer Converter</h2>
+
+    <input type="number" id="meter" placeholder="Enter meters">
+
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function convert() {
+
+            let meter = document.getElementById("meter").value;
+
+            let kilometer = meter / 1000;
+
+            document.getElementById("result").innerHTML =
+                kilometer + " Kilometer";
+        }
+    </script>
+
+</body>
+</html>

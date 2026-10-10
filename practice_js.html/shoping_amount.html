@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let shop_Amt = Number(prompt("Enter Shopping Amount:"));
+
+        let disc = 0;
+
+        if (shop_Amt >= 50000) {
+            disc = 40;
+        }
+        else if (shop_Amt >= 30000) {
+            disc = 30;
+        }
+        else if (shop_Amt >= 20000) {
+            disc = 20;
+        }
+        else {
+            disc = 0;
+        }
+
+        let discount_Amt = (shop_Amt * disc);
+        let final_Amt = shop_Amt - discount_Amt;
+
+        console.log("Shopping Amount =", shop_Amt);
+        console.log("Discount =", disc + "%");
+        console.log("Discount Amount =", discount_Amt);
+        console.log("Final Amount =", final_Amt);
+
+
+        // let i = 0;
+        // for (; ;) {
+        //     if (i <= 10) {
+        //         document.write(i)
+        //         i++;
+        //     }
+        //     break;
+
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <br><br>
+
+    <button onclick="addition()">Addition +</button>
+    <button onclick="subtraction()">Subtraction -</button>
+    <button onclick="multiplication()">Multiplication ×</button>
+
+    <h3 id="result">Result: </h3>
+
+    <script>
+
+        function addition() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let result = a + b;
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+
+        function subtraction() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let result = a - b;
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+
+        function multiplication() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let result = a * b;
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
